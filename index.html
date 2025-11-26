@@ -51,15 +51,34 @@
 </header>
   <header>
 <h1>Zasada działania układu</h1>
-    
+    <h2>Układ thereminu został podzielony na dwa tory: tor wysokości dźwięku (pitch) oraz tor głośności (volume).
+W torze wysokości znajdują się dwa generatory: oscylator odniesienia oraz oscylator zmienny, do którego podłączona jest antena reagująca na ruch dłoni. 
+Oba oscylatory są zbudowane w oparciu o wzmacniacz TL082 oraz zestaw rezystorów, kondensatorów i potencjometrów, które umożliwiają strojenie instrumentu.
+
+Przy antenie znajduje się niewielka pojemność (rzędu kilku pF), która zmienia się, gdy użytkownik zbliża dłoń. 
+  Ta zmiana pojemności przesuwa częstotliwość oscylatora zmiennego. Następnie sygnał z obu oscylatorów jest porównywany, przechodzi przez dzielnik 
+  napięcia i trafia do bufora. Za buforem umieszczono zestaw elementów filtrujących sygnał w tym <i>AM Detecor</i>, który jest szeroko stosowany w systemach audio.
+ </h2>
+    <h2>
+Drugi tor (tor głośności) działa analogicznie: sygnał z drugiej anteny jest porównywany z sygnałem referencyjnym, buforowany i filtrowany. 
+Wygenerowany w ten sposób przebieg steruje poziomem wzmocnienia sygnału audio.
+Na końcu oba przetworzone sygnały trafiają do wzmacniacza końcowego, a następnie na wyjście JACK  
+    </h2> 
   </header>
   <main>
     <h2>Wbudowana przeglądarka projektu - Altium Viewer</h2>
-    <h3>W poniższej przeglądarce można przeglądać: Widok 3D , Schematy(SCH), Układ PCB i listę komponentów</h3>
-    <iframe src="https://personal-viewer.365.altium.com/client/index.html?feature=embed&source=BFD99625-0B81-47B0-8068-4DE407599296&activeView=3D" width="1280" height="720" style="overflow:hidden;border:none;width:100%;height:720px;" scrolling="no" allowfullscreen="true" onload="window.top.scrollTo(0,0);"></iframe>
-    
+    <h3>W poniższej przeglądarce można zobaczyć końcowy projekt składający się z: widoku 3D płyty PCB , schematów (SCH), projektu układu PCB i listy komponentów</h3>
+    <iframe src="https://personal-viewer.365.altium.com/client/index.html?feature=embed&source=BFD99625-0B81-47B0-8068-4DE407599296&activeView=3D" width="1280" height="720" style="overflow:hidden;border:none;width:100%;height:720px;" scrolling="no" allowfullscreen="true" onload="window.top.scrollTo(0,0);"></iframe> 
   </main>
+<header>
+  <h1> Relizacja płyty PCB</h1>
+  <h2>
+    Płyta została zamówiona na stronie <i>JLCPCB</i>. 
+    Poniżej znajduje się zdjęcie (z przodu i z tyłu) pustej płyty PCB. 
+    <img src="Przód_płyty.jpg" alt="Przód płyty" style="width:100%;max-width:800px;">
 
+  </h2>
+</header>
   <footer>
     <small>Hosted with GitHub Pages</small>
   </footer>
