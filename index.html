@@ -51,19 +51,13 @@
 </header>
   <header>
 <h1>Zasada działania układu</h1>
-    <h2>Układ thereminu został podzielony na dwa tory: tor wysokości dźwięku (pitch) oraz tor głośności (volume).
-W torze wysokości znajdują się dwa generatory: oscylator odniesienia oraz oscylator zmienny, do którego podłączona jest antena reagująca na ruch dłoni. 
-Oba oscylatory są zbudowane w oparciu o wzmacniacz TL082 oraz zestaw rezystorów, kondensatorów i potencjometrów, które umożliwiają strojenie instrumentu.
+    <h2>Układ thereminu obejmuje tor wysokości dźwięku (pitch), w którym znajdują się dwa generatory: oscylator odniesienia oraz oscylator zmienny połączony z jedyną anteną reagującą na ruch dłoni. 
+      Oba generatory zbudowano w oparciu o wzmacniacz TL082 oraz zestaw rezystorów, kondensatorów i potencjometrów, umożliwiających precyzyjne strojenie instrumentu.
 
-Przy antenie znajduje się niewielka pojemność (rzędu kilku pF), która zmienia się, gdy użytkownik zbliża dłoń. 
-  Ta zmiana pojemności przesuwa częstotliwość oscylatora zmiennego. Następnie sygnał z obu oscylatorów jest porównywany, przechodzi przez dzielnik 
-  napięcia i trafia do bufora. Za buforem umieszczono zestaw elementów filtrujących sygnał w tym <i>AM Detecor</i>, który jest szeroko stosowany w systemach audio.
+      Przy antenie znajduje się niewielka pojemność (rzędu kilku pF), która zmienia się, gdy użytkownik zbliża dłoń. 
+      Ta zmiana pojemności przesuwa częstotliwość oscylatora zmiennego. Następnie sygnał z obu oscylatorów jest porównywany, przechodzi przez dzielnik 
+      napięcia i trafia do bufora. Za buforem umieszczono zestaw elementów filtrujących sygnał w tym <i>AM Detecor</i>, który jest szeroko stosowany w systemach audio.
  </h2>
-    <h2>
-Drugi tor (tor głośności) działa analogicznie: sygnał z drugiej anteny jest porównywany z sygnałem referencyjnym, buforowany i filtrowany. 
-Wygenerowany w ten sposób przebieg steruje poziomem wzmocnienia sygnału audio.
-Na końcu oba przetworzone sygnały trafiają do wzmacniacza końcowego, a następnie na wyjście JACK  
-    </h2> 
   </header>
   <main>
     <h2>Wbudowana przeglądarka projektu - Altium Viewer</h2>
@@ -84,7 +78,9 @@ Na końcu oba przetworzone sygnały trafiają do wzmacniacza końcowego, a nast�
   </center>
 </section>      
       
-<section> <h1>Monaż elementów na płycie [tutaj będzie foto]</h1> </section>
+<section> <h1>Monaż elementów na płycie </h1> 
+ <img src="images/przodPCB.jpg" alt="Przód płyty" style="width:45%; max-width:400px; display:inline-block; margin:0 10px;">
+</section>
 <section><h1>Filmik działającego układu [tutaj potem nagra się film]</h1> </section>
 
 
